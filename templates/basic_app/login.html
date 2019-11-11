@@ -1,0 +1,17 @@
+{% extends 'basic_app/base.html'%}
+{% block body_block %}
+<div class="jumbotron" style="font-family: 'Josefin Slab', serif;">
+  <h1>Login Here!</h1>
+  <form  action="{% url 'basic_app:user_login' %}" method="post">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input type="text" class="form-control" name="username" placeholder="Enter Username">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" class="form-control" name="password" placeholder="Password">
+    <br>
+    <input type="submit" class="btn btn-primary" name="" value="Login">
+
+  </form>
+</div>
+{% endblock %}
