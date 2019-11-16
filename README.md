@@ -35,7 +35,7 @@ Install requirements.txt
 ## Step 3:
 SQLITE database is been used for this project. mLab: Database-as-a-Service for MongoDB. 
 1. sqlite is inbuilt databasefor django
-3. Create a Collection: "users".
+3. Create a Collection: "users"..
 
 
 ## Step 4:
